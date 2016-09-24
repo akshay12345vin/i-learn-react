@@ -47,20 +47,21 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(34);
 
-	var HelloMessage = React.createClass({
-	  displayName: 'HelloMessage',
+	var Header = __webpack_require__(172);
 
-	  render: function () {
-	    return React.createElement(
-	      'div',
-	      null,
-	      'Hello ',
-	      this.props.name
-	    );
-	  }
+	var Index = React.createClass({
+		displayName: 'Index',
+
+		render: function () {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(Header, null)
+			);
+		}
 	});
 
-	ReactDOM.render(React.createElement(HelloMessage, { name: 'akshay anil vinhcurkar' }), document.getElementById('react_app'));
+	ReactDOM.render(React.createElement(Index, null), document.getElementById('react_app'));
 
 /***/ },
 /* 1 */
@@ -21432,6 +21433,121 @@
 
 	module.exports = ReactDOMNullInputValuePropHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var Header = React.createClass({
+		displayName: "Header",
+
+		render: function () {
+			return React.createElement(
+				"header",
+				null,
+				React.createElement(
+					"nav",
+					{ className: "navbar navbar-default", role: "navigation" },
+					React.createElement(
+						"div",
+						{ className: "container-fluid" },
+						React.createElement(
+							"div",
+							{ className: "navbar-header" },
+							React.createElement(
+								"button",
+								{ type: "button", className: "navbar-toggle", "data-toggle": "collapse", "data-target": ".navbar-ex1-collapse" },
+								React.createElement(
+									"span",
+									{ className: "sr-only" },
+									"Toggle navigation"
+								),
+								React.createElement("span", { className: "icon-bar" }),
+								React.createElement("span", { className: "icon-bar" }),
+								React.createElement("span", { className: "icon-bar" })
+							),
+							React.createElement(
+								"a",
+								{ className: "navbar-brand", href: "#" },
+								"This is Header Of the hello"
+							)
+						),
+						React.createElement(
+							"div",
+							{ className: "collapse navbar-collapse navbar-ex1-collapse" },
+							React.createElement(
+								"ul",
+								{ className: "nav navbar-nav navbar-right" },
+								React.createElement(
+									"li",
+									null,
+									React.createElement(
+										"a",
+										{ href: "#" },
+										"Link"
+									)
+								),
+								React.createElement(
+									"li",
+									{ className: "dropdown" },
+									React.createElement(
+										"a",
+										{ href: "#", className: "dropdown-toggle", "data-toggle": "dropdown" },
+										"Dropdown ",
+										React.createElement("b", { className: "caret" })
+									),
+									React.createElement(
+										"ul",
+										{ className: "dropdown-menu" },
+										React.createElement(
+											"li",
+											null,
+											React.createElement(
+												"a",
+												{ href: "#" },
+												"Action"
+											)
+										),
+										React.createElement(
+											"li",
+											null,
+											React.createElement(
+												"a",
+												{ href: "#" },
+												"Another action"
+											)
+										),
+										React.createElement(
+											"li",
+											null,
+											React.createElement(
+												"a",
+												{ href: "#" },
+												"Something else here"
+											)
+										),
+										React.createElement(
+											"li",
+											null,
+											React.createElement(
+												"a",
+												{ href: "#" },
+												"Separated link"
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	});
+
+	module.exports = Header;
 
 /***/ }
 /******/ ]);
