@@ -48,6 +48,7 @@
 	var ReactDOM = __webpack_require__(34);
 
 	var Header = __webpack_require__(172);
+	var Footer = __webpack_require__(173);
 
 	var Index = React.createClass({
 		displayName: 'Index',
@@ -56,7 +57,12 @@
 			return React.createElement(
 				'div',
 				null,
-				React.createElement(Header, null)
+				React.createElement(
+					'div',
+					{ className: 'container' },
+					React.createElement(Header, null),
+					React.createElement(Footer, null)
+				)
 			);
 		}
 	});
@@ -778,7 +784,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule reactProdInvariant
-	 *
+	 * 
 	 */
 	'use strict';
 
@@ -1356,7 +1362,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 *
+	 * 
 	 */
 
 	function makeEmptyFunction(arg) {
@@ -1601,7 +1607,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule getIteratorFn
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -1647,7 +1653,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule KeyEscapeUtils
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -6376,7 +6382,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule accumulateInto
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -6440,7 +6446,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule forEachAccumulated
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -7709,7 +7715,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule ReactFeatureFlags
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -8988,7 +8994,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule isTextInputElement
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -12455,7 +12461,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 *
+	 * 
 	 * @typechecks static-only
 	 */
 
@@ -15984,7 +15990,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule ReactNodeTypes
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -16030,7 +16036,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 *
+	 * 
 	 */
 
 	/*eslint-disable no-self-compare */
@@ -16265,7 +16271,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule flattenChildren
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -16443,7 +16449,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule ReactServerUpdateQueue
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -18592,7 +18598,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 *
+	 * 
 	 */
 
 	var isTextNode = __webpack_require__(146);
@@ -21109,7 +21115,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule adler32
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -21471,7 +21477,7 @@
 							React.createElement(
 								"a",
 								{ className: "navbar-brand", href: "#" },
-								"This is Header Of the hello"
+								"This is Header Of the hello core"
 							)
 						),
 						React.createElement(
@@ -21548,6 +21554,34 @@
 	});
 
 	module.exports = Header;
+
+/***/ },
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var Footer = React.createClass({
+	  displayName: "Footer",
+
+	  render: function () {
+	    return React.createElement(
+	      "footer",
+	      { className: "footer navbar-fixed-bottom well" },
+	      React.createElement(
+	        "div",
+	        { className: "container" },
+	        React.createElement(
+	          "p",
+	          { className: "text-muted" },
+	          "This is Footer"
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Footer;
 
 /***/ }
 /******/ ]);

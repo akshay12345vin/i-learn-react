@@ -1,6 +1,12 @@
 var React = require('react');
 
 var Header = React.createClass({
+	var links = [
+		"1": "About",
+		"2": "Home",
+		"3": "Exit"
+	];
+
 	render: function(){
 		return (
 			<header>
@@ -18,16 +24,7 @@ var Header = React.createClass({
 
 						<div className="collapse navbar-collapse navbar-ex1-collapse">
 							<ul className="nav navbar-nav navbar-right">
-								<li><a href="#">Link</a></li>
-								<li className="dropdown">
-									<a href="#" className="dropdown-toggle" data-toggle="dropdown">Dropdown <b className="caret"></b></a>
-									<ul className="dropdown-menu">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li><a href="#">Separated link</a></li>
-									</ul>
-								</li>
+								<li><a href="#"></a></li>
 							</ul>
 						</div>
 					</div>
